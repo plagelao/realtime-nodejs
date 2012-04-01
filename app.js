@@ -13,7 +13,8 @@ app.get('/', function(req, res){
   res.render('index');
 });
 
-app.listen(3000);
+theport = process.env.PORT || 2000;
+app.listen(theport);
 
 var activeClients = 0;
 
